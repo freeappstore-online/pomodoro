@@ -1,0 +1,11 @@
+{
+  "name": "freepomodoroapp",
+  "private": true,
+  "packageManager": "pnpm@10.30.3",
+  "engines": { "node": ">=22" },
+  "pnpm": { "onlyBuiltDependencies": ["esbuild"] },
+  "scripts": {
+    "dev": "pnpm --filter @freepomodoroapp/web dev",
+    "build": "pnpm --filter @freepomodoroapp/web build"
+  }
+}
