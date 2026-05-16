@@ -2,10 +2,21 @@
   "name": "freepomodoroapp",
   "private": true,
   "packageManager": "pnpm@10.30.3",
-  "engines": { "node": ">=22" },
-  "pnpm": { "onlyBuiltDependencies": ["esbuild"] },
+  "engines": {
+    "node": ">=22"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  },
   "scripts": {
     "dev": "pnpm --filter @freepomodoroapp/web dev",
-    "build": "pnpm --filter @freepomodoroapp/web build"
+    "build": "pnpm --filter @freepomodoroapp/web build",
+    "test": "pnpm --filter @pomodoro/web exec tsc -b"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freeappstore-online/pomodoro.git"
   }
 }
